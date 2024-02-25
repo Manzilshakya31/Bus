@@ -66,3 +66,25 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.logo {
+  margin: 0 auto;
+}
+
+.logo img {
+  width: 80px;
+  max-width: 100%;
+  height: auto;
+
+}
+
+.toogleBtn{
+  width: 38px;
+  height: 38px;
+
+}
+
+. navLink li a  img{
+  width: 38px;
+  height: 38px;
+}
