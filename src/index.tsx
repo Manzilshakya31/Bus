@@ -1,3 +1,4 @@
+// @ts-ignore
 import React from "react";
 import Navbar from "./Navbar/navbar";
 
@@ -8,7 +9,7 @@ const Index = () => {
         <Navbar />
       </div>
 
-      <p>yo</p>
+      {/*<p>yo</p>*/}
     </div>
   );
 };
