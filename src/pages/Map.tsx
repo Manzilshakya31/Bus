@@ -19,6 +19,7 @@ interface Props {
 }
 
 export default function Map({ location }: Props) {
+  console.log();
   return (
     <MapContainer
       center={[0, 0]}
