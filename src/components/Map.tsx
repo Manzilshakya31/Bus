@@ -31,12 +31,12 @@ export default function Map({ location }: Props) {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
 
-      {/* <Marker
+      <Marker
         icon={markerIcon}
         position={[location.latitude, location.longitude]}
       >
         <Popup>{location.display_name}</Popup>
-      </Marker> */}
+      </Marker>
     </MapContainer>
   );
 }

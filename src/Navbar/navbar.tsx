@@ -6,7 +6,7 @@ import Location from "../assets/icons/Location";
 import Recent from "../assets/icons/Recent";
 import Menudash from "../assets/icons/menudash";
 import { LeftCircleTwoTone } from "@ant-design/icons";
-import React from "react";
+
 import Dropdown from "./Dropdown";
 
 const Navbar = () => {

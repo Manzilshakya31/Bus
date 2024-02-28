@@ -1,4 +1,3 @@
-import React from "react";
 import BusTable from "./BusTable";
 
 const PopBox = () => {
