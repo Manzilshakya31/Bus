@@ -1,5 +1,3 @@
-import React from "react";
-
 const Currentlocation = ({ className }: { className?: string }) => {
   return (
     <svg

@@ -1,5 +1,3 @@
-import React from "react";
-
 const Menudash = ({ className }: { className?: string }) => {
   return (
     <svg
