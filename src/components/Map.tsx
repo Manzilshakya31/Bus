@@ -1,9 +1,9 @@
 import { TileLayer, MapContainer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
-import markerIconURL from "/home/sandip/Documents/Bus/src/assets/react.svg";
+// import markerIconURL from "/home/sandip/Documents/Bus/src/assets/react.svg";
 
 const markerIcon = new L.Icon({
-  iconUrl: markerIconURL,
+  iconUrl: "https://cdn-icons-png.flaticon.com/512/6565/6565893.png",
   iconSize: [25, 35],
   iconAnchor: [5, 30],
 });
@@ -21,8 +21,8 @@ interface Props {
 export default function Map({ location }: Props) {
   return (
     <MapContainer
-      center={[0, 0]}
-      zoom={2}
+      center={[27.7088, 85.3241]}
+      zoom={15}
       scrollWheelZoom={false}
       className="w-full h-full"
     >
@@ -31,12 +31,12 @@ export default function Map({ location }: Props) {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
 
-      <Marker
+      {/* <Marker
         icon={markerIcon}
         position={[location.latitude, location.longitude]}
       >
         <Popup>{location.display_name}</Popup>
-      </Marker>
+      </Marker> */}
     </MapContainer>
   );
 }
