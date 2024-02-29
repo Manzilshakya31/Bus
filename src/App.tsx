@@ -1,6 +1,7 @@
-import React from "react";
-import Index from ".";
 import "./App.css";
+import Navbar from "./Navbar/navbar";
+import PopBox from "./components/PopBox";
+import Map from "./components/Map/Map";
 // import Navbar from "./Navbar/navbar";
 
 function App() {
@@ -9,8 +10,17 @@ function App() {
   return (
     <>
       <div>
-        {/* <Navbar /> */}
-        <Index />
+        <div className="flex">
+          <div>
+            <Navbar />
+          </div>
+          <div className="w-full h-screen bg-green-200">
+            <Map />
+          </div>
+        </div>
+        {/* <div className="mt-[15%] flex justify-center w-full z-100 top-0 absolute">
+          <PopBox />
+        </div> */}
       </div>
     </>
   );

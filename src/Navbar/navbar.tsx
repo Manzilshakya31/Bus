@@ -5,7 +5,8 @@ import Currentlocation from "../assets/icons/Currentlocation";
 import Location from "../assets/icons/Location";
 import Recent from "../assets/icons/Recent";
 import Menudash from "../assets/icons/menudash";
-import React from "react";
+import { LeftCircleTwoTone } from "@ant-design/icons";
+
 import Dropdown from "./Dropdown";
 
 const Navbar = () => {
@@ -19,12 +20,21 @@ const Navbar = () => {
       <aside className={` h-lvh top-0 bg-[#F6F6F6]  `}>
         <div className=" gap-[35px] grid-cols-1 flex flex-col justify-center items-center">
           {showSidebar ? (
-            <img
-              src="src/assets/logo/banner@2x.png"
-              alt="Logo"
-              className="h-[80px] mt-[70px]"
-              onClick={handleClick}
-            />
+            <div className="flex">
+              <div>
+                <img
+                  src="src/assets/logo/banner@2x.png"
+                  alt="Logo"
+                  className="h-[80px] mt-[70px]"
+                />
+              </div>
+              <div className="mt-[90px] absolute ml-[340px]">
+                <LeftCircleTwoTone
+                  style={{ fontSize: "24px" }}
+                  onClick={handleClick}
+                />
+              </div>
+            </div>
           ) : (
             <button onClick={handleClick}>
               <Menudash className="mt-[80px]" />
@@ -152,6 +162,7 @@ const Navbar = () => {
                   </div>
                 </div>
               </div> */}
+              <span className="text-[36px]">Travel Agency</span>
               <Dropdown heading="Inside the valley" />
               <Dropdown heading="Outside the valley" />
             </div>
